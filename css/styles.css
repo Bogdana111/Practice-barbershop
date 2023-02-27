@@ -178,8 +178,6 @@ body {
 .team-title {
   color: var(--secondary-title-color);
 }
-.team-item {
-}
 .team-item-title {
   font-size: 18px;
   line-height: 1.39;
@@ -239,4 +237,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--secondary-title-color);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
