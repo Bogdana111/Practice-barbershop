@@ -30,7 +30,7 @@
 
           <ul class="header-list list">
             <li class="header-item">
-              <a href="#" class="header-link link">About</a>
+              <a href="#" class="header-link link active">About</a>
             </li>
             <li class="header-item">
               <a href="#" class="header-link link">Services and prices</a>
@@ -46,33 +46,37 @@
         <a href="tel:+380441111111" class="header-tel link"
           >+38 044 111 11 11</a
         >
-        <button type="button" class="header-btn btn">Online-booking</button>
+        <button type="button" data-modal-open class="header-btn btn">
+          Online-booking
+        </button>
       </div>
     </header>
     <main>
       <!-- Hero section -->
       <section class="hero-section">
         <div class="container hero-container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="hero-link link"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="hero-link link"
-                >YouTube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-list-wrap">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="hero-link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="hero-link link"
+                  >YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-content">
             <p class="hero-subtitle subtitle">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
@@ -455,5 +459,11 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close">X</button>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
