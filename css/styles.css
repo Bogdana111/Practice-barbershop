@@ -28,7 +28,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -279,7 +280,7 @@ body {
 }
 /* Services section */
 .prices-section {
-  padding: 120px 0;
+  padding: 84px 0;
   background-image: url(../img/services-bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -296,18 +297,21 @@ body {
 }
 .prices-content {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
   margin-bottom: 44px;
-}
-.prices-list {
-  padding: 30px 20px;
-  flex-grow: 1;
-  width: calc((100%-30px) / 2);
   background-image: linear-gradient(
     180deg,
     #171a24 0%,
     rgba(23, 26, 36, 0.2) 100%
   );
+}
+.prices-list {
+  padding: 30px 20px;
+  flex-grow: 1;
+  width: 100%;
+}
+.prices-list:last-child {
+  padding-top: 0;
 }
 .prices-item {
   display: flex;
@@ -416,7 +420,7 @@ body {
 }
 /* Section Team */
 .team-section {
-  padding: 120px 0;
+  padding: 84px 0;
   color: #f7f7f7;
 }
 .team-subtitle {
@@ -429,10 +433,11 @@ body {
 }
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .team-item {
-  width: calc((100%-60px) / 3);
+  width: 100%;
 }
 
 .team-content {
@@ -486,12 +491,15 @@ body {
 }
 /* Section Gallery */
 .gallery-section {
-  padding: 120px 0;
+  padding: 84px 0;
 }
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+.gallery-item {
+  width: 100%;
 }
 .gallery-subtitle {
   color: var(--secondary-title-color);
