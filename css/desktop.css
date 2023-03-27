@@ -2,6 +2,37 @@
   .container {
     max-width: 1190px;
   }
+  .hero-content {
+    padding: 276px 100px 208px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/barber-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1070px 680px;
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-content {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/barber-hero-2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1070px 680px;
+  }
+  .hero-title {
+    font-size: 72px;
+  }
+  .hero-text {
+    font-size: 18px;
+    max-width: 360px;
+  }
   .team-section .gallery-section,
   .prices-section {
     padding: 120px 0;

@@ -164,51 +164,39 @@ body {
 
 .hero-container {
   display: flex;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.hero-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  width: 100px;
-  transform: rotate(-90deg) translateY(100%);
-  transform-origin: bottom left;
-}
 .hero-list-wrap {
-  display: flex;
-  align-items: flex-end;
+  display: none;
 }
-.hero-list::before {
-  content: " ";
-  width: 60px;
-  height: 1px;
-  background-color: var(--secondary-title-color);
-  flex-shrink: 0;
-}
+
 .hero-content {
-  background-color: gray;
-  padding: 276px 100px 208px;
+  padding: 208px 30px 208px;
   flex-grow: 1;
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
     ),
-    url(../img/barber-hero.jpg);
+    url(../img/hero-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1070px 680px;
+  background-size: 480px 580px;
 }
-.hero-link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: var(--secondary-title-color);
-  transition: color 0.35s linear;
-}
-.hero-link:hover,
-.hero-link:focus {
-  color: var(--accent-color);
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-content {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/hero-mobile-2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 480px 580px;
+  }
 }
 .hero-subtitle {
   color: rgba(157, 164, 189, 0.6);
@@ -216,15 +204,15 @@ body {
 }
 .hero-title {
   font-family: var(--secondary-fonts);
-  font-size: 72px;
+  font-size: 42px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
   margin-bottom: var(--basic-margin);
 }
 .hero-text {
-  width: 360px;
-  font-size: 18px;
+  width: 100%;
+  font-size: 16px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
@@ -330,7 +318,7 @@ body {
   background-color: rgba(157, 164, 189, 0.12);
 }
 .prices-item-text {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
