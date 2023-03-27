@@ -2,6 +2,9 @@
   .container {
     max-width: 448px;
   }
+  .header-btn-mobile {
+    display: none;
+  }
   .hero-container {
     max-width: 100%;
   }
